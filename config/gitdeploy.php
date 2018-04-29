@@ -4,6 +4,17 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Remote name
+    |--------------------------------------------------------------------------
+    |
+    | The name of the remote repository to pull the changes from
+    |
+    */
+
+    'git_cmd' => 'pull',
+
+    /*
+    |--------------------------------------------------------------------------
     | Email recipients
     |--------------------------------------------------------------------------
     |
@@ -34,16 +45,6 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Email template
-    |--------------------------------------------------------------------------
-    |
-    | We have a good email template but if you need to change the view, create your own email template and change it here.
-    | Default is 'gitdeploy::email'
-    |
-    */
-    'email_template' => 'gitdeploy::email',
-    /*
-    |--------------------------------------------------------------------------
     | Repository path
     |--------------------------------------------------------------------------
     |
@@ -51,7 +52,9 @@ return [
     | is left empty the script will try to determine the directory itself
     | but looking for the project's .env file it's nearby .git directory.
     |
-    | No trailing slash
+    | No trailing slash 
+    | Example: /home/john/public_html/
+    | Example: /home/john/public_html/some/inner/path/myLaravelProject
     |
     */
 
@@ -81,16 +84,6 @@ return [
 
     'allowed_sources' => [],
 
-    /*
-    |--------------------------------------------------------------------------
-    | Remote name
-    |--------------------------------------------------------------------------
-    |
-    | The name of the remote repository to pull the changes from
-    |
-    */
-    
-    'remote' => 'origin',
 
     /*
     |--------------------------------------------------------------------------
@@ -120,17 +113,6 @@ return [
     */
 
     'maintenance_mode' => true,
-
-    /*
-    |--------------------------------------------------------------------------
-    | Fire Event
-    |--------------------------------------------------------------------------
-    |
-    | Allow the git hook to fire a event "GitDeployed" so that everybody can listen to that event.
-    | See readme how to create a nice listener on that.
-    |
-    */
-    'fire_event' => true,
 
     /*
     |--------------------------------------------------------------------------

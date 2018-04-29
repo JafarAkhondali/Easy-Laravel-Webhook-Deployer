@@ -1,6 +1,6 @@
 {
-    "name": "orphans/git-deploy-laravel",
-    "description": "Helps automate the deployment of projects onto servers by utilising Git web hooks.",
+    "name": "JafarAkhondali/Easy-Laravel-Webhook-Deployer.git",
+    "description": "Easy Github and GitLab Webhook deployer for Laravel",
     "license": "MIT",
     "autoload": {
         "psr-4": {
