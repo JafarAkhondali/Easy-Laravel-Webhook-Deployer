@@ -1,5 +1,5 @@
 {
-    "name": "JafarAkhondali/Easy-Laravel-Webhook-Deployer.git",
+    "name": "jafarAkhondali/easy-laravel-webhook-deployer.git",
     "description": "Easy Github and GitLab Webhook deployer for Laravel",
     "license": "MIT",
     "autoload": {
