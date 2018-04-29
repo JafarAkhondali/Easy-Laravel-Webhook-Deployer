@@ -15,19 +15,19 @@ Add the following to your `composer.json` file then update your composer as norm
 
     {
         "require" : {
-            "orphans/git-deploy-laravel" : "dev-master"
+            "jafarakhondali/git-deploy-laravel" : "dev-master"
         }
     }
 
 Or run:
 
-    composer require orphans/git-deploy-laravel
+    composer require jafarakhondali/git-deploy-laravel
 
 ### Step 2
 
 Add the following line to you providers in `config/app.php`:
 
-    Orphans\GitDeploy\GitDeployServiceProvider::class,
+    jafarakhondali\GitDeploy\GitDeployServiceProvider::class,
     
 ** New in Laravel 5.5 - Service provide should be automatically detected without the above change **
 
@@ -54,7 +54,7 @@ In most cases the package will find the correct Git repository and Git executabl
 
 To add custom configuration run:
 
-    php artisan vendor:publish --provider="Orphans\GitDeploy\GitDeployServiceProvider"
+    php artisan vendor:publish --provider="jafarakhondali\GitDeploy\GitDeployServiceProvider"
 
 Then edit `/config/gitdeploy.php` to suit your needs.
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Orphans\GitDeploy;
+namespace jafarakhondali\GitDeploy;
 
 use Illuminate\Support\ServiceProvider;
 
